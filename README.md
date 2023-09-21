@@ -21,6 +21,7 @@ Wireshark:
 <img width="1440" alt="Screenshot 2023-09-18 at 19 57 38" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/e0a0e81b-4e6b-4f23-bb7a-c3b321021be5">
 
 Terminal:
+
 <img width="562" alt="Screenshot 2023-09-18 at 19 58 23" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/c9434d8d-94cb-4bf3-91c5-ff6e749eec6d">
 
 
