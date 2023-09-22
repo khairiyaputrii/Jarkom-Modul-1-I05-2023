@@ -20,7 +20,8 @@ In this task, We have to identify user activity focused on the action of ```uplo
 
 To obtain this information, we need to examine the ```Transmission Control Protocol``` section of packet ```147``` that is available. By doing this, we will be able to find the needed answer, which is ```258040667```.
 
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 43 42" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/db5b3974-fb57-4cd8-b504-13bdaa39aa26">
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 43 42" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/df5b5640-658e-483a-9ecd-42b57d1b93c3">
+
 
 > b.  Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut?
 
@@ -28,7 +29,8 @@ To obtain this information, we need to examine the ```Transmission Control Proto
 
 In the same section, you can find the ```Acknowledgment number (raw)``` following the previously mentioned value, and its value is ```1044861039```.
 
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 43 42" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/db5b3974-fb57-4cd8-b504-13bdaa39aa26">
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 43 42" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/81570c66-0a8a-4a8a-833e-9f2a0ee912fa">
+
 
 > c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
@@ -36,7 +38,8 @@ In the same section, you can find the ```Acknowledgment number (raw)``` followin
 
 This is similar to question `a`, but we need to look for the  ```STOR``` operation in packet number ```149```. And we got ```1044861039```.
 
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 44 00" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/0f2f1dc1-5104-4ab8-828f-a0e4cf7de8d8">
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 44 00" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/48a0d73d-5fdd-415e-94bc-6cc23913d22d">
+
 
 > d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
@@ -44,10 +47,11 @@ This is similar to question `a`, but we need to look for the  ```STOR``` operati
 
 This also similar to question `b`, and also need to look for the  ```STOR``` operation in packet number ```149```. And we got ```258040696```.
 
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 44 00" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/0f2f1dc1-5104-4ab8-828f-a0e4cf7de8d8">
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 44 00" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/cb920302-9ecc-48c6-9c4b-20ac8a313c1d">
 
 **Terminal:**
-<img width="1281" alt="Screen Shot 2023-09-22 at 16 45 15" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/7aa453f2-0d77-4ae4-ab8d-db67275a58e3">
+
+<img width="1281" alt="Screen Shot 2023-09-22 at 16 45 15" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/432e756c-13fe-4910-bfb7-3cbc015b5192">
 
 # No. 2
 ## Question
@@ -79,10 +83,13 @@ To find the web server that the practicum portal used, I filtered the packets us
 **answer:** ```UDP```
 
 **Wireshark:**
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 52 47" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/7a789009-280a-4e4c-bda8-7be564a50170">
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 52 47" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/3546ccb9-6675-4c46-8f68-4a8c75c5edfd">
 
 **Terminal:**
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 52 55" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/c20b6e18-5ed3-4451-992b-f063bf18c602">
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 52 55" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/b9f41f00-8d6c-4934-bc41-27b41dbc2e71">
+
 
 ## Explanation
 a. To do this question, we can use a query filter.  We use ip.src or ip.dst for the address and udp.port for the desired port. In this context, we need to apply the filter query (ip.src == 239.255.255.250 or ip.dst == 239.255.255.250) && udp.port == 3702. The result will display all packets that match the filter query. After counting, the total is 21 packets.
@@ -154,10 +161,12 @@ For this answer we were given 2 files, which are a  **zip** file, and a **pcap**
 **answer:** ```JDRNJA```
 
 **Wireshark:**
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 55 21" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/5e7fd69a-5b5c-4209-b2f4-f38eeb6e0d25">
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 55 21" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/a9cba12b-db07-41a8-9c71-cc413228157a">
 
 **Terminal:**
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 57 48" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/8a0d106c-84de-450b-aa02-bb4070f96b30">
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 57 48" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/0cca97ac-4fe8-497b-ad10-78af29b76f2b">
 
 ## Explanation
 
@@ -192,10 +201,14 @@ Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yan
 **answer:** ```tcp.dstport == 80 || udp.dstport == 80```
 
 **Wireshark:**
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 58 59" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/31d5fc77-95b3-4711-8492-06f68c8d06b7">
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 58 59" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/f6744e08-6e72-48a5-b880-7d6f0d54a67a">
+
 
 **Terminal:**
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 59 05" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/683bbb04-f0fd-49c1-9c85-2d46dbf85699">
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 59 05" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/f3b72db6-df1f-4f33-afa2-d552c44e7b3c">
+
 
 
 ## Explanation
@@ -209,10 +222,12 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 **answer:** ``` ip.src == 10.51.40.1 && ip.dst != 10.39.55.34```
 
 **Wireshark:**
-<img width="1440" alt="Screen Shot 2023-09-22 at 17 00 16" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/ee8394f4-cbb1-4021-afd7-324c1e852c47">
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 17 00 16" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/856227f4-d86d-400a-80c3-7e70680fd91d">
 
 **Terminal:**
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 59 59" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/73f098be-f260-4ad4-9f8b-c11b75206fa0">
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 59 59" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/1c954d5a-2465-42b3-b273-a633ec771e9d">
 
 
 ## Explanation
