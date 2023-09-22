@@ -35,8 +35,23 @@ To find the web server that the practicum portal used, I filtered the packets us
 **answer:** ```21```
 
 **Wireshark:**
->
 
+**Terminal:**
+
+## Explanation
+a. To do this question, we can use a query filter.  We use ip.src or ip.dst for the address and udp.port for the desired port. In this context, we need to apply the filter query (ip.src == 239.255.255.250 or ip.dst == 239.255.255.250) && udp.port == 3702. The result will display all packets that match the filter query. After counting, the total is 21 packets.
+
+## Question
+b. Protokol layer transport apa yang digunakan?
+
+**answer:** ```UDP```
+
+**Wireshark:**
+
+**Terminal:**
+
+## Explanation
+b. for this question we can see the protocol inside the protocol column, and it shows UDP.
 
 # No. 4
 ## Question
