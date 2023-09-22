@@ -57,11 +57,13 @@ This also similar to question `b`, and also need to look for the  ```STOR``` ope
 
 **Wireshark:**
 
-<img width="1440" alt="Screenshot 2023-09-18 at 19 57 38" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/e0a0e81b-4e6b-4f23-bb7a-c3b321021be5">
+<img width="1440" alt="Screenshot 2023-09-18 at 19 57 38" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/47e75054-4d20-406c-a30a-116768ff629d">
+
 
 **Terminal:**
 
-<img width="562" alt="Screenshot 2023-09-18 at 19 58 23" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/c9434d8d-94cb-4bf3-91c5-ff6e749eec6d">
+<img width="562" alt="Screenshot 2023-09-18 at 19 58 23" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/32031474-7604-4ee2-abf9-8a148b3209f2">
+
 
 ## Explanation
 To find the web server that the practicum portal used, I filtered the packets using ```http``` on the file that was given. After that, I search for the same IP address as the portal, which is on the no 1765. Then, I double clicked on it and all of the details will come up at the bottom of the screen (the black part on the wireshark screen). And then we can see the the server that is used under the _Hypertext Transfer Protocol,_ which is ```gunicorn```.
@@ -96,11 +98,13 @@ b. for this question we can see the protocol inside the protocol column, and it 
 
 **Wireshark:**
 
-<img width="1440" alt="4" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/0f0c5b11-9c0a-4889-b5f1-01be7f67d4d4">
+<img width="1440" alt="4" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/3fa09d5b-36b1-4d36-b1d7-0571b0ee702d">
+
 
 **Terminal:**
 
-<img width="568" alt="4 terminal" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/337d6b14-7da1-473f-b38e-fbbce0c66ebf">
+<img width="568" alt="4 terminal" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/30d195ca-34e4-4e5d-9f1b-9b7498972412">
+
 
 ## Explanation
 To find the checksum value on the packet no 130, first I opened the file that was given. Then, I searched for the packet no 130 and double clicked it. And we will see the checksum value under the _User Datagram Protocol_, which is ```0x18e5```.
@@ -119,25 +123,26 @@ To find the checksum value on the packet no 130, first I opened the file that wa
 
 **Wireshark:**
 
-<img width="1440" alt="5 wireshark" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/50aa625d-1368-4855-aa1b-ce83225737e0">
+<img width="1440" alt="5 wireshark" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/6035b54a-dee8-4e6e-ada7-750b8888942c">
 
-<img width="1440" alt="5 password" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/43b19c17-e44d-4fd2-9df7-aecc0b41548b">
+<img width="1440" alt="5 password" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/517ce155-991c-49da-a68b-19e1851732d5">
+
 
 **To decode the zip password:**
 
-<img width="904" alt="5 decode" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/87a94bf6-7b17-4205-b953-1ea21a54bde0">
+<img width="904" alt="5 decode" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/492f172b-ffde-45cd-8a71-d93358375af7">
 
 **Inside of the zip file:**
 
-<img width="1440" alt="5 file buat instance" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/e7f70bb9-417e-473f-ac68-0df484197124">
+<img width="1440" alt="5 file buat instance" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/cb5c0028-88ac-46e5-b7aa-228493589161">
 
 **To find the answers for the questions on the terminal:**
 
-<img width="1440" alt="5 answers" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/4bb67f7b-0197-4b1b-9daa-7e4c158a5ec3">
+<img width="1440" alt="5 answers" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/ad1da252-8b4f-4b85-aa92-e499d81ba990">
 
 **Terminal:**
 
-<img width="620" alt="5 terminal" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/a33574a3-148e-4fb4-a2d3-82c1fa5bdc1d">
+<img width="620" alt="5 terminal" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/6f66e3cd-c8ae-4f43-af1b-a1747d84de80">
 
 ## Explanation
 For this answer we were given 2 files, which are a  **zip** file, and a **pcap** file. To open the zip file we have to find its password using the pcap file. First I filtered all the packets using ```tcp.stream eq 0``` and then search for the packet that has _pass_ in it. Then I right cliked and choose ```Follow``` then ```TCP Stream```. It will open a new window, and you will find the password which is ```NWltcGxlUGFzNXdvcmQ=```, but you will still need to decode it in order to use it to open the zip file. Since it says that it needs to be decoded from Base64, I used a website where it can decode from Base64. After decoding it, I got the real password that can be used to open the zip file which is ```5implePas5word```. After successfully open the zip file, it will show the **instance** that we can copy and paste to the terminal to get the questions that we need to answer. 
@@ -171,11 +176,11 @@ Then we can break it down into numbers that are <= 26, like this ```10 4 18 14 1
 
 **Wireshark:**
 
-<img width="1440" alt="7 wireshark" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/21b04a36-d449-482e-b26e-e9288a59670c">
+<img width="1440" alt="7 wireshark" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/1abc3f11-e2fb-476e-81dd-5881fa1397a1">
 
 **Terminal:**
 
-<img width="506" alt="7 terminal" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/07499aca-c1c2-4f39-ab81-00a7e95ee2a9">
+<img width="506" alt="7 terminal" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/7634c1ec-c27d-42e2-83d9-a5b9309b8fdc">
 
 ## Explanation
 For this question, we were asked the amout of packets that the **destination IP** is **184.87.193.88**. To get the amount of packets, I filtered it using ```ip.dst == 184.87.193.88``` on the **pcapng** file. After finished filtering, we can see at the bottom right that the amount of packets are ```6```.
@@ -222,15 +227,15 @@ We were asked to provide a filter query so that Wireshark only captures packets 
 
 **Wireshark:**
 
-<img width="1440" alt="10 wireshark" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/1cfde359-a18b-4bb4-bb88-282a26285676">
+<img width="1440" alt="10 wireshark" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/b101e644-3f80-4cd7-a314-17c55a832b34">
 
 **To get the username and password as the answer for the question:**
 
-<img width="1440" alt="10 file jawaban" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/9e4ddd2d-afed-4847-b7b3-bdb28b61863b">
+<img width="1440" alt="10 file jawaban" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/2c212439-c0d7-46ed-8b4a-80d24e7a2822">
 
 **Terminal:**
 
-<img width="563" alt="10 terminal" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/7dde7bb3-b35b-42a1-a7f4-9786deb32049">
+<img width="563" alt="10 terminal" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/beaaaab7-2080-455a-b00b-3a264651f1ef">
 
 ## Explanation
 For this question we were asked to find the username and password of the user in the format ```username:password``` using Telnet. To get the answer first thing that I did was filter all the packets using ```telnet```, and then I choose the pack **no 262**. Then I right click on that packet, and choose ```Follow``` then ```TCP Stream```. It will open a new window, and you will find the username and password which are ```ddhhaaffiinn``` and ```kesayangannyak0k0```. Since the username is 2 colors, blue and red, and the password is only in one color, red, I only take the red letters for the username, which is ```dhafin```. That is how I get the answer as ```dhafin:kesayangannyak0k0```.
