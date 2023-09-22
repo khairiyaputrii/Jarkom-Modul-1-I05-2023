@@ -30,6 +30,11 @@ To find the web server that the practicum portal used, I filtered the packets us
 
 # No. 3
 ## Question
+>a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+**answer:** ```21```
+**Wireshark:**
+>
+
 
 # No. 4
 ## Question
