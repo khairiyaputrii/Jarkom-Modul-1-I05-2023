@@ -211,3 +211,4 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 <img width="563" alt="10 terminal" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/115809934/7dde7bb3-b35b-42a1-a7f4-9786deb32049">
 
 ## Explanation
+For this question we were asked to find the username and password of the user in the format ```username:password``` using Telnet. To get the answer first thing that I did was filter all the packets using ```telnet```, and then I choose the pack **no 262**. Then I right click on that packet, and choose ```Follow``` then ```TCP Stream```. It will open a new window, and you will find the username and password which are ```ddhhaaffiinn``` and ```kesayangannyak0k0```. Since the username is 2 colors, blue and red, and the password is only in one color, red, I only take the red letters for the username, which is ```dhafin```. That is how I get the answer as ```dhafin:kesayangannyak0k0```.
