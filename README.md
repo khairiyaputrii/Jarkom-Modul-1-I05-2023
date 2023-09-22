@@ -10,6 +10,32 @@ Group Members:
 
 # No. 1
 ## Question
+> a. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?
+
+**answer:** ```258040667```
+
+> b.  Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut?
+
+**answer:** ```1044861039```
+
+> c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+**answer:** ```1044861039```
+
+> d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+**answer:** ```258040696```
+
+**Wireshark:**
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 43 42" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/db5b3974-fb57-4cd8-b504-13bdaa39aa26">
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 44 00" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/0f2f1dc1-5104-4ab8-828f-a0e4cf7de8d8">
+
+**Terminal:**
+<img width="1281" alt="Screen Shot 2023-09-22 at 16 45 15" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/7aa453f2-0d77-4ae4-ab8d-db67275a58e3">
+
+## Explanation
+
 
 # No. 2
 ## Question
@@ -34,21 +60,18 @@ To find the web server that the practicum portal used, I filtered the packets us
 
 **answer:** ```21```
 
-**Wireshark:**
-
-**Terminal:**
-
-## Explanation
-a. To do this question, we can use a query filter.  We use ip.src or ip.dst for the address and udp.port for the desired port. In this context, we need to apply the filter query (ip.src == 239.255.255.250 or ip.dst == 239.255.255.250) && udp.port == 3702. The result will display all packets that match the filter query. After counting, the total is 21 packets.
-
-## Question
-b. Protokol layer transport apa yang digunakan?
+>b. Protokol layer transport apa yang digunakan?
 
 **answer:** ```UDP```
 
 **Wireshark:**
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 52 47" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/7a789009-280a-4e4c-bda8-7be564a50170">
 
 **Terminal:**
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 52 55" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/c20b6e18-5ed3-4451-992b-f063bf18c602">
+
+## Explanation
+a. To do this question, we can use a query filter.  We use ip.src or ip.dst for the address and udp.port for the desired port. In this context, we need to apply the filter query (ip.src == 239.255.255.250 or ip.dst == 239.255.255.250) && udp.port == 3702. The result will display all packets that match the filter query. After counting, the total is 21 packets.
 
 ## Explanation
 b. for this question we can see the protocol inside the protocol column, and it shows UDP.
@@ -109,6 +132,18 @@ For this answer we were given 2 files, which are a  **zip** file, and a **pcap**
 
 # No. 6
 ## Question
+> Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
+
+**answer:** ```JDRNJA```
+
+**Wireshark:**
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 55 21" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/5e7fd69a-5b5c-4209-b2f4-f38eeb6e0d25">
+
+**Terminal:**
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 57 48" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/8a0d106c-84de-450b-aa02-bb4070f96b30">
+
+## Explanation
+
 
 # No. 7
 ## Question
@@ -129,9 +164,33 @@ For this question, we were asked the amout of packets that the **destination IP*
 
 # No. 8
 ## Question
+Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+
+**answer:** ```tcp.dstport == 80 || udp.dstport == 80```
+
+**Wireshark:**
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 58 59" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/31d5fc77-95b3-4711-8492-06f68c8d06b7">
+
+**Terminal:**
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 59 05" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/683bbb04-f0fd-49c1-9c85-2d46dbf85699">
+
+
+## Explanation
 
 # No. 9
 ## Question
+Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
+
+**answer:** ``` ip.src == 10.51.40.1 && ip.dst != 10.39.55.34```
+
+**Wireshark:**
+<img width="1440" alt="Screen Shot 2023-09-22 at 17 00 16" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/ee8394f4-cbb1-4021-afd7-324c1e852c47">
+
+**Terminal:**
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 59 59" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/73f098be-f260-4ad4-9f8b-c11b75206fa0">
+
+
+## Explanation
 
 # No. 10
 ## Question
