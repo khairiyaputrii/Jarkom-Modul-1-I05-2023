@@ -10,32 +10,44 @@ Group Members:
 
 # No. 1
 ## Question
+> User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
+
+In this task, We have to identify user activity focused on the action of ```uploading a file```. Therefore, we can trace packets that contain requests and responses related to this activity by filtering for = ftp. This information can be found in packets number ```147``` and ```149``` which are zip files.
+
 > a. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?
 
 **answer:** ```258040667```
+
+To obtain this information, we need to examine the ```Transmission Control Protocol``` section of packet ```147``` that is available. By doing this, we will be able to find the needed answer, which is ```258040667```.
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 43 42" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/db5b3974-fb57-4cd8-b504-13bdaa39aa26">
 
 > b.  Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut?
 
 **answer:** ```1044861039```
 
+In the same section, you can find the ```Acknowledgment number (raw)``` following the previously mentioned value, and its value is ```1044861039```.
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 43 42" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/db5b3974-fb57-4cd8-b504-13bdaa39aa26">
+
 > c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
 **answer:** ```1044861039```
+
+This is similar to question `a`, but we need to look for the  ```STOR``` operation in packet number ```149```. And we got ```1044861039```.
+
+<img width="1440" alt="Screen Shot 2023-09-22 at 16 44 00" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/0f2f1dc1-5104-4ab8-828f-a0e4cf7de8d8">
 
 > d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
 **answer:** ```258040696```
 
-**Wireshark:**
-<img width="1440" alt="Screen Shot 2023-09-22 at 16 43 42" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/db5b3974-fb57-4cd8-b504-13bdaa39aa26">
+This also similar to question `b`, and also need to look for the  ```STOR``` operation in packet number ```149```. And we got ```258040696```.
 
 <img width="1440" alt="Screen Shot 2023-09-22 at 16 44 00" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/0f2f1dc1-5104-4ab8-828f-a0e4cf7de8d8">
 
 **Terminal:**
 <img width="1281" alt="Screen Shot 2023-09-22 at 16 45 15" src="https://github.com/khairiyaputrii/Jarkom-Modul-1-I05-2023/assets/90357502/7aa453f2-0d77-4ae4-ab8d-db67275a58e3">
-
-## Explanation
-
 
 # No. 2
 ## Question
@@ -144,6 +156,12 @@ For this answer we were given 2 files, which are a  **zip** file, and a **pcap**
 
 ## Explanation
 
+Our task here is to find the packet with the ```sequence number``` ```7812```.
+we need to concentrate on the term ```SOURCE ADDRESS```, which refers to the source address in ```IP source``` format mentioned in the information. Then convert the sequence of numbers from this source address into several numbers, considering that we only have ```26``` letters from the substitution result in the alphabet.
+
+Combine the source IP address that we found in packet ```7812```. Which here, we got ```1041814101```.
+
+Then we can break it down into numbers that are <= 26, like this ```10 4 18 14 10 1```. Finally, we can form a word using the pattern that has been found, which is ```JDRNJA```. 
 
 # No. 7
 ## Question
@@ -177,6 +195,8 @@ Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yan
 
 ## Explanation
 
+In this task, we were asked to query a filter so that Wireshark only captures all protocol packets destined for ```port 80!``` (If there are multiple ports, sort them alphabetically). To achieve this, we can use the following Wireshark filter query: ```tcp.dstport == 80 || udp.dstport == 80```. By using this filter query, Wireshark will display all packets directed to port 80, whether they are using the ```TCP or UDP``` protocol.
+
 # No. 9
 ## Question
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
@@ -191,6 +211,8 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 
 
 ## Explanation
+
+We were asked to provide a filter query so that Wireshark only captures packets originating from the address ```10.51.40.1``` but not destined for the address ```10.39.55.34!``` To achieve this, we can use the following Wireshark filter query: ```ip.src == 10.51.40.1 && ip.dst != 10.39.55.34```. When we combine these two conditions, we’ll get a filter query that captures packets sent from 10.51.40.1 to any destination except 10.39.55.34.
 
 # No. 10
 ## Question
